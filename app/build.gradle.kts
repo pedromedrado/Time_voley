@@ -62,6 +62,10 @@ dependencies {
     implementation(libs.androidx.navigation.runtime.ktx)
     implementation(libs.androidx.material) // Verifique a versão mais recente
     implementation(libs.androidx.navigation.compose.v272)
+    implementation (libs.accompanist.systemuicontroller)
+    implementation (libs.androidx.datastore.preferences)
+    implementation (libs.gson)
+    implementation(libs.androidx.datastore.preferences.core.jvm) // Para converter listas para JSON
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -69,5 +73,7 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+
+
 
 }
